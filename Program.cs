@@ -11,7 +11,7 @@ class Program
 
         Console.WriteLine("Hello " + FirstName + " " + LastName); // Concatenation
         Console.WriteLine("Hello {0} {1}", FirstName, LastName); // Place Holder Syntax
-        Console.WriteLine($"Hello {FirstName} {LastName}");     // Latest One
+        Console.WriteLine($"Hello {FirstName} {LastName}");     // $ sign is a short hand on string interpolation
         Console.ReadLine();
 
         //Note 1: A namespace is used to organize your code and is collection of classes, interfaces, structs, enums, namespace and delegates.
