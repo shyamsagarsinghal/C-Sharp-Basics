@@ -99,7 +99,25 @@ class Program
 
         //Note: Nullable type concept is not compatible with "var".
 
+        //null coalescing operator: ??
+        int? x = null;
+        int y = 4;
+        int? result;
+        result = x ?? y;
+        Console.WriteLine(result.ToString());
+        Console.ReadLine();
 
+        //This operator assigned the value of "x" to" result " if "x" is null else it will assign the value of "y" to "result".
+        //So if the first variable is null then that value will be assigned else the value of the second variable will be assigned.
+        //As expected in the above case "result" will hold Null.
+        //Caution: As variable "result" can also have null, therefore it should be defined as Nullable Type.
+
+        //Note: Assigning Nullable Type variable Value to a Not Nullable Type
+        int? x = 4;
+        int y = x ?? 0;
+        //Now y will have value of x i.e. 4. 
+        //In place of 0 in statement int y = x ?? 0; any integer can be used
+        //Whatever the integer you use will be the default value of "y".
     }
 }
 
