@@ -39,6 +39,27 @@ class Program
         //String Type
         string Name = " \"Shyam\" ";   //This is called Escape Sequences.. There are many types of Escape Sequences
         Console.WriteLine(Name);
+
+
+
+
+
+
+
+
+
+
+
+
+        //Assignment Operator: =
+        //Arithmetic Operator: +, -, *, /, %
+        //Comparison Operator: ==, !=, >, >=, <, <=
+        //Conditional Operator: &&, ||
+        //Ternary Operator: ?:
+        int number = 0;
+        bool IsNumber10 = number == 10 ? true : false;
+
+
     }
 }
 
