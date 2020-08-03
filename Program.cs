@@ -118,6 +118,32 @@ class Program
         //Now y will have value of x i.e. 4. 
         //In place of 0 in statement int y = x ?? 0; any integer can be used
         //Whatever the integer you use will be the default value of "y".
+
+        //Datatypes Conversion
+        //1.Implicit Conversion
+        //2.Explicit Conversion
+        //3.Difference betwen Parse() and TryParse()
+
+        //1.Implicit Conversion
+        int i = 100;
+        float f = i; //This is an implicit conversion
+        //Implicit Conversion is done by the compiler when there is no loss of information and no possiblity of throwing exceptions during converison
+        //If considered above statement, Converting an int to a float will no loose any data and no exception will be thrown
+
+        //2.Explicit Conversion
+        float f = 123.45F;
+        int i = f;  // It will throw an error "Cannot implicitly convert type 'float' to 'int'.
+        //The above statement can be converted by doing Explicit Conversion
+        int i = (int)f; // type cast operator
+        int i = Convert.ToInt32(f); // Convert Class
+        //Now the i will print the value as "123" instead of 123.45.. As there was a loss of information complier did not do implicit conversion.
+
+        //Difference between Type Cast Operator and Class Convert
+        float f = 124234324324324324.45F;
+        int i = (int)f; //Here the i will show the maximum number of value that int can hold, something like: -2147483648.
+        int i = Convert.ToInt32(f); //It will throw an exception "Value was either too large or too small for an Int32.
+
+        //3.Parse() and TryParse()
     }
 }
 
